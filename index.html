@@ -7,6 +7,18 @@
 	</head>
 	<body>
 		<script>
+			function getRandomInt(max){
+				return Math.floor(Math.random() * Math.floor(max));
+			}
+
+			function computerPlay(){
+				let options = ['Rock', 'Paper', 'Scissors'];
+				let decision = getRandomInt(3);
+				return options[decision];
+			}
+
+			let computer = computerPlay();
+			console.log(computer);
 		</script>
 	</body>
 </html>
