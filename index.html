@@ -7,18 +7,38 @@
 	</head>
 	<body>
 		<script>
+			const rock = "rock";
+			const paper = "paper";
+			const scissors = "scissors";
+
 			function getRandomInt(max){
 				return Math.floor(Math.random() * Math.floor(max));
 			}
 
 			function computerPlay(){
-				let options = ['Rock', 'Paper', 'Scissors'];
+				let options = [rock, paper, scissors];
 				let decision = getRandomInt(3);
 				return options[decision];
 			}
 
 			let computer = computerPlay();
 			console.log(computer);
+
+			function playRound(playerSelection, computerSelection){
+				playerSelection = playerSelection.toLowerCase();
+				if( ( ( playerSelection == rock ) && ( computerSelection == scissors ) ) ||
+					( ( playerSelection == scissors ) && ( computerSelection == paper ) ) ||
+					( ( playerSelection == paper ) && ( computerSelection == rock ) ) ){
+					return "You won! " + playerSelection + " beats " + computerSelection;
+				}else if ( playerSelection == computerSelection ){
+					return "Tie!";
+				}else{
+					return "You lose! " + playerSelection + " is weak to " + computerSelection;
+				}
+			}
+
+			const player = "RoCk";
+			console.log(playRound(player, computer));
 		</script>
 	</body>
 </html>
