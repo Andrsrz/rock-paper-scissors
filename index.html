@@ -37,33 +37,7 @@
 			}
 
 			function game(){
-				let playerCounter = 0;
-				let computerCounter = 0;
-				let player;
-				let round;
-
-				for(let i = 0; i < 5; i++){
-					player = window.prompt("Rock, Paper or Scissors ?");
-					round = playRound(player, computerPlay());
-					console.log(round);
-
-					if(round.includes(won)){
-						playerCounter++;
-					}else if(round.includes(lose)){
-						computerCounter++;
-					}
-				}
-
-				console.log("Player won " + playerCounter + " out of 5 rounds!.");
-				console.log("Computer won " + computerCounter + " out of 5 rounds!.");
 				
-				if(playerCounter > computerCounter){
-					console.log("Player won!");
-				}else if(computerCounter > playerCounter){
-					console.log("Computer won!");
-				}else{
-					console.log("Tie!");
-				}
 			}
 
 			game();
