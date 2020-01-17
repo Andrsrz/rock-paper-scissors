@@ -7,3 +7,15 @@ button {
 	height: 250px;
 	width: 250px;
 }
+
+#rock {
+	background-image: url("media/rock.png");
+}
+
+#paper {
+	background-image: url("media/paper.png");
+}
+
+#scissors {
+	background-image: url("media/scissors.png");
+}
