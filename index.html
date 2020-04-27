@@ -3,50 +3,17 @@
 	<head>
 		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 		<meta content="utf-8" http-equiv="enconding">
-		<title>Rock Paper Scissors!</title>
-		<link rel="stylesheet" type="text/css" href="style.css" />
+		<title>Rock, Paper, Scissors, Lizard, Spock!</title>
+		<link rel="stylesheet" type="text/css" href="style/style.css"/>
+		<script type="text/javascript" src="js/game.js"></script>
 	</head>
 	<body>
-		<div class="container">
-			<button id="rock"></button>
-			<button id="paper"></button>
-			<button id="scissors"></button>
+		<div class="parent">
+			<input class="child" id="rock" type="image" src="media/rock.png" alt="rock" />
+			<input class="child" id="paper" type="image" src="media/paper.png" alt="paper" />
+			<input class="child" id="scissors" type="image" src="media/scissors.png" alt="scissors" />
+			<input class="child" id="lizard" type="image" src="media/lizard.png" alt="lizard" />
+			<input class="child" id="spock" type="image" src="media/spock.png" alt="spock" />
 		</div>
-		<script>
-			const rock = "rock";
-			const paper = "paper";
-			const scissors = "scissors";
-			const won = "won";
-			const lose = "lose";
-
-			function getRandomInt(max){
-				return Math.floor(Math.random() * Math.floor(max));
-			}
-
-			function computerPlay(){
-				let options = [rock, paper, scissors];
-				let decision = getRandomInt(3);
-				return options[decision];
-			}
-
-			function playRound(playerSelection, computerSelection){
-				playerSelection = playerSelection.toLowerCase();
-				if( ( ( playerSelection == rock ) && ( computerSelection == scissors ) ) ||
-					( ( playerSelection == scissors ) && ( computerSelection == paper ) ) ||
-					( ( playerSelection == paper ) && ( computerSelection == rock ) ) ){
-					return "You won! " + playerSelection + " beats " + computerSelection;
-				}else if ( playerSelection == computerSelection ){
-					return "Tie!";
-				}else{
-					return "You lose! " + computerSelection + " beats " + playerSelection;
-				}
-			}
-
-			function game(){
-				
-			}
-
-			game();
-		</script>
 	</body>
 </html>
