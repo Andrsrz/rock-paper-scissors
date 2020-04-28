@@ -7,7 +7,13 @@
 		<link rel="stylesheet" type="text/css" href="style/style.css"/>
 	</head>
 	<body>
-		<div id="score"><!-- SCORE --></div>
+		<h1>Welcome to Rock, Paper, Scissors, Lizard, Spock!</h1>
+		<div class="parent" id="score"><!-- SCORE -->
+			<h1 class="child">PLAYER : </h1>
+			<h1 class="child" id="playerScore">0</h1>
+			<h1 class="child">COMPUTER : </h1>
+			<h1 class="child" id="computerScore">0</h1>
+		</div>
 		<div class="parent" id="player"> <!-- PLAYER -->
 			<input class="child" id="rock" type="image" src="media/rock.png" alt="rock" />
 			<input class="child" id="paper" type="image" src="media/paper.png" alt="paper" />
@@ -15,7 +21,12 @@
 			<input class="child" id="lizard" type="image" src="media/lizard.png" alt="lizard" />
 			<input class="child" id="spock" type="image" src="media/spock.png" alt="spock" />
 		</div>
-		<div class="parent" id="computer"> <!-- COMPUTER --></div>
+		<br>
+		<br>
+		<div class="parent" id="computer"> <!-- COMPUTER -->
+			<h4 class="child">COMPUTER CHOICE : </h4>
+			<input class="child" id="computerSelection" type="image" src="" alt="computerSelection"/>
+		</div>
 		<script type="text/javascript" src="js/game.js"></script>
 	</body>
 </html>
