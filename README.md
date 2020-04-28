@@ -1,7 +1,7 @@
 # Rock, Paper, Scissors!
 From The Odin Project's [curriculum](https://www.theodinproject.com/lessons/rock-paper-scissors)
 
-![how it looks](media/test.gif);
+![how it looks](media/test.gif)
 
 ## What's this?
 A simple web console-gui game.
